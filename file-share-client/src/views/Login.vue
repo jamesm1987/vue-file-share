@@ -57,7 +57,7 @@ export default {
 
     async login () {
       this.loading = true
-
+      
       try {
         await this.loginAction(this.form)
 
