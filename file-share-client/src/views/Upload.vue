@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="mb-8">
-      Uploader
+      <app-uploader />
     </div>
 
     <div>
@@ -20,9 +20,11 @@
 <script>
   import { mapActions, mapGetters } from 'vuex'
   import AppFile from '@/components/AppFile.vue'
+  import AppUploader from '@/components/AppUploader.vue'
   export default {
     components: {
-      AppFile
+      AppFile,
+      AppUploader
     },
     computed: {
       ...mapGetters({
